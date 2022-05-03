@@ -34,8 +34,8 @@ class App extends React.Component {
    credits.forEach((credit) => {
      creditSum += credit.amount
    })
- 
-   let accountBalance = creditSum - debitSum;
+   let sum = creditSum - debitSum;
+   let accountBalance = sum.toFixed(2);
    this.setState({debits, credits, accountBalance});
  }
  
